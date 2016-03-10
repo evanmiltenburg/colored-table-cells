@@ -35,3 +35,7 @@ Output:
 \bottomrule
 \end{tabular}
 ```
+
+`generate_table` has two optional arguments: `cmap` and `fmt`. The former can be any palette from `matplotlib.cm`[1], and the latter has to be either `latex` or `latex_booktabs`.
+
+[1] Possible values are: spring, ocean, gist_rainbow_r, hsv_r, RdBu_r, Pastel1_r, Greys_r, Blues_r, Accent, YlGn, Spectral, PRGn, gray_r, Greens, autumn_r, PuOr_r, PuOr, YlGnBu, Paired_r, Greys, rainbow, prism, YlOrBr, seismic_r, Wistia_r, brg, spectral, RdYlBu, YlOrBr_r, gist_stern, RdYlGn_r, YlGnBu_r, BuPu, PiYG, Greens_r, spring_r, bwr_r, cool, GnBu, bone_r, pink_r, hsv, YlOrRd, flag_r, Reds, Purples_r, PuBuGn_r, gist_ncar, gnuplot, winter, spectral_r, BrBG, nipy_spectral, BrBG_r, cool_r, RdYlGn, afmhot, bone, ocean_r, Pastel2_r, gist_gray_r, OrRd, RdGy, cubehelix_r, RdPu_r, binary, summer_r, CMRmap_r, PuBu, hot_r, afmhot_r, hot, winter_r, BuGn_r, autumn, PRGn_r, Oranges_r, terrain_r, gist_earth, pink, PuRd_r, bwr, binary_r, summer, RdPu, gist_heat_r, CMRmap, Dark2, Spectral_r, flag, coolwarm, RdGy_r, gist_rainbow, Reds_r, Blues, Oranges, gnuplot2, OrRd_r, Wistia, seismic, BuPu_r, gist_stern_r, Purples, PuBu_r, YlGn_r, Set2_r, RdYlBu_r, PiYG_r, Set3_r, gist_yarg, gnuplot_r, copper, Set1, Accent_r, rainbow_r, jet_r, nipy_spectral_r, Set2, RdBu, coolwarm_r, Set3, gist_gray, GnBu_r, gist_heat, Set1_r, brg_r, jet, gray, Dark2_r, PuRd, cubehelix, Paired, gist_earth_r, terrain, copper_r, YlOrRd_r, BuGn, PuBuGn, gist_ncar_r, prism_r, gnuplot2_r, Pastel1, Pastel2, gist_yarg_r
