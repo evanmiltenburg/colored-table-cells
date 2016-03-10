@@ -14,8 +14,8 @@ generate_table([[1,2],[3,4],[2,6]],['a','b'])
 Output:
 
 ```latex
-PUT THIS IN THE PREAMBLE:
-\usepackage[table]{booktabs}
+% PUT THIS IN THE PREAMBLE:
+\usepackage{booktabs}
 \usepackage{xcolor}
 \usepackage{colortbl}
 \definecolor{color1}{rgb}{0.7309496507925146,0.8394771337509155,0.9213225729325238}
@@ -24,7 +24,7 @@ PUT THIS IN THE PREAMBLE:
 \definecolor{color2}{rgb}{0.5356862896797704,0.7460822911823497,0.8642522187793956}
 \definecolor{color3}{rgb}{0.32628989885835086,0.6186236290370717,0.8027989352450651}
 
-THE TABLE:
+% THE TABLE:
 \begin{tabular}{ll}
 \toprule
  a                    & b                    \\

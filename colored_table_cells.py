@@ -50,15 +50,15 @@ def generate_table(data, headers, fmt='latex_booktabs', cmap=cm.Blues):
     norm = mpl.colors.Normalize(vmin=min(values)-1, vmax=max(values)+1)
     mapping = cm.ScalarMappable(norm=norm, cmap=cmap)
     definitions, value_to_colors = latex_command_dict(values, mapping)
-    print('PUT THIS IN THE PREAMBLE:')
+    print('% PUT THIS IN THE PREAMBLE:')
     if fmt == 'latex_booktabs':
-        print('\\usepackage[table]{booktabs}')
+        print('\\usepackage{booktabs}')
     print('\\usepackage{xcolor}')
     print('\\usepackage{colortbl}')
     print('\n'.join(definitions),'\n')
     data = [[modify_cell_content(value, value_to_colors) for value in row]
             for row in data]
-    print('THE TABLE:')
+    print('% THE TABLE:')
     if headers:
         table = tabulate(data, headers, tablefmt=fmt)
     else:
