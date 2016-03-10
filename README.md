@@ -1,6 +1,8 @@
 # Colored table cells
 ### Color LaTeX table cells by their value
 
+This module is useful to visually inspect large arrays of numbers. It's probably best to see this as a proof-of-concept. Ideally this functionality should be ported as a sub-module to the `tabulate` package. That would also get rid of the hacks to put the `\cellcolor` command in each cell --tabulate's normal behavior is to escape all LaTeX commands.
+
 ## Requirements
 * Matplotlib
 * Tabulate
